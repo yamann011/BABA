@@ -3,46 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ücretsiz Web Sitem</title>
+    <title>GitHub Pages 404 Hatası Çözümü</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            text-align: center;
-            background: #f0f2f5;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
+        body {
+            background: linear-gradient(135deg, #6e5494 0%, #4078c0 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
-        h1 {
-            color: #2563eb;
-        }
-        .btn {
-            background: #2563eb;
+        
+        header {
+            background: linear-gradient(135deg, #4078c0 0%, #6e5494 100%);
             color: white;
-            padding: 12px 20px;
-            text-decoration: none;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: #6e5494;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #6e5494;
+        }
+        
+        .screenshot {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        .screenshot-placeholder {
+            background: #e8e8e8;
+            height: 200px;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-style: italic;
+        }
+        
+        .tip {
+            background: #e6f7ff;
+            border-left: 4px solid #4078c0;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .warning {
+            background: #fff4e6;
+            border-left: 4px solid #ffa94d;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .button {
             display: inline-block;
-            margin: 10px;
+            padding: 12px 25px;
+            background: #6e5494;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background: #5a3f7a;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .step {
+                flex-direction: column;
+            }
+            .step-number {
+                margin-bottom: 10px;
+            }
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .code {
+            background: #2b303b;
+            color: #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 15px 0;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Merhaba Dünya!</h1>
-        <p>Bu benim ücretsiz GitHub Pages sitem.</p>
-        <p>🚀 Tamamen bedava ve ömür boyu yayında kalacak!</p>
+        <header>
+            <h1>GitHub Pages 404 Hatası Çözümü</h1>
+            <p>"There isn't a GitHub Pages site here" hatasını düzeltme rehberi</p>
+        </header>
         
-        <a href="#" class="btn">Benimle İletişime Geç</a>
-        <a href="#" class="btn">Projelerimi Gör</a>
+        <div class="content">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">GitHub Repository Ayarlarını Kontrol Edin</h3>
+                    <p>GitHub'da repository'nize gidin ve "Settings" sekmesine tıklayın.</p>
+                    <div class="screenshot">
+                        <div class="screenshot-placeholder">GitHub Repository Settings Sayfası Görüntüsü</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Pages Sekmesine Gidin</h3>
+                    <p>Sol menüden "Pages" seçeneğini bulun ve tıklayın.</p>
+                    <div class="screenshot">
+                        <div class="screenshot-placeholder">GitHub Pages Ayarları Görüntüsü</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Doğru Branch'ı Seçin</h3>
+                    <p>"Branch" bölümünden "main" veya "gh-pages" branch'ını seçin ve "/ (root)" klasörünü seçtiğinizden emin olun.</p>
+                    <div class="tip">
+                        Çoğu durumda "main" branch'ını ve "/(root)" klasörünü seçmeniz yeterlidir.
+                    </div>
+                    <div class="screenshot">
+                        <div class="screenshot-placeholder">Branch Seçim Ekranı Görüntüsü</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">Kaydet ve Bekle</h3>
+                    <p>"Save" butonuna tıklayın ve GitHub Pages'in etkinleşmesini bekleyin. Bu işlem birkaç dakika sürebilir.</p>
+                    <div class="warning">
+                        GitHub Pages'in tamamen etkinleşmesi 1-10 dakika arasında sürebilir. Lütfen sabırla bekleyin.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 class="step-title">Repository Adını Kontrol Edin</h3>
+                    <p>Kullanıcı sayfası için repository adının <strong>kullaniciadi.github.io</strong> formatında olması gerekir.</p>
+                    <div class="code">
+                        kullaniciadi.github.io
+                    </div>
+                    <div class="tip">
+                        Proje sayfası için ise herhangi bir isim kullanabilirsiniz, ancak erişim adresi <strong>kullaniciadi.github.io/repository-adi</strong> şeklinde olacaktır.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3 class="step-title">index.html Dosyasını Kontrol Edin</h3>
+                    <p>Repository'nizin kök dizininde (ana dizin) index.html dosyası bulunduğundan emin olun.</p>
+                    <div class="code">
+                        /index.html
+                    </div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <a href="https://docs.github.com/tr/pages/getting-started-with-github-pages/creating-a-github-pages-site" class="button" target="_blank">GitHub Pages Dokümantasyonu</a>
+                <a href="https://github.com/" class="button" target="_blank">GitHub'a Git</a>
+            </div>
+        </div>
         
-        <p>📍 Bu site GitHub Pages ile yayınlanmıştır.</p>
+        <footer>
+            <p>GitHub Pages ile ücretsiz web hosting | 404 hatası çözüm rehberi</p>
+        </footer>
     </div>
+
+    <script>
+        // Butonlar için basit efekt
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+                });
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
